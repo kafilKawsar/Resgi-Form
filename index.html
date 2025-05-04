@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="image/image2.jpg" alt="Decorative">
+            </div>
+            <div class="form-content">
+                <h2>Welcome to the <span class="highlight">GRAND MEETUP</span> of <span class="camp-name">Sadhinota Camp</span></h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="gender">Gender</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+    
+                    <label for="district">District</label>
+                    <select id="district" name="district">
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Khulna">Khulna</option>
+                    </select>
+    
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Check this box to agree all <a href="#">Terms & Services</a></label>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
